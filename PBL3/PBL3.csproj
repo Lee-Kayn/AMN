@@ -316,6 +316,14 @@
   <ItemGroup>
     <None Include="Resources\Class.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\student-registration-369785.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdfsdfsdf.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

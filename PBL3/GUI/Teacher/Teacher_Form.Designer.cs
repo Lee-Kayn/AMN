@@ -32,6 +32,11 @@ namespace PBL3
             this.panel_slide = new System.Windows.Forms.Panel();
             this.but_exit = new System.Windows.Forms.Button();
             this.but_dash = new System.Windows.Forms.Button();
+            this.panel_scoreSubmenu = new System.Windows.Forms.Panel();
+            this.button_scorePrint = new System.Windows.Forms.Button();
+            this.button_manageScore = new System.Windows.Forms.Button();
+            this.button_newScore = new System.Windows.Forms.Button();
+            this.button_score = new System.Windows.Forms.Button();
             this.panel_stdsubmenu = new System.Windows.Forms.Panel();
             this.button_stdPrint = new System.Windows.Forms.Button();
             this.button_manageStd = new System.Windows.Forms.Button();
@@ -60,12 +65,8 @@ namespace PBL3
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.button_newScore = new System.Windows.Forms.Button();
-            this.button_manageScore = new System.Windows.Forms.Button();
-            this.button_scorePrint = new System.Windows.Forms.Button();
-            this.panel_scoreSubmenu = new System.Windows.Forms.Panel();
-            this.button_score = new System.Windows.Forms.Button();
             this.panel_slide.SuspendLayout();
+            this.panel_scoreSubmenu.SuspendLayout();
             this.panel_stdsubmenu.SuspendLayout();
             this.panel_logo.SuspendLayout();
             this.panel_main.SuspendLayout();
@@ -75,7 +76,6 @@ namespace PBL3
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel_scoreSubmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_slide
@@ -129,6 +129,83 @@ namespace PBL3
             this.but_dash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_dash.UseVisualStyleBackColor = true;
             this.but_dash.Click += new System.EventHandler(this.but_dash_Click);
+            // 
+            // panel_scoreSubmenu
+            // 
+            this.panel_scoreSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel_scoreSubmenu.Controls.Add(this.button_scorePrint);
+            this.panel_scoreSubmenu.Controls.Add(this.button_manageScore);
+            this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
+            this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 405);
+            this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
+            this.panel_scoreSubmenu.Size = new System.Drawing.Size(174, 153);
+            this.panel_scoreSubmenu.TabIndex = 6;
+            // 
+            // button_scorePrint
+            // 
+            this.button_scorePrint.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_scorePrint.FlatAppearance.BorderSize = 0;
+            this.button_scorePrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_scorePrint.ForeColor = System.Drawing.Color.White;
+            this.button_scorePrint.Location = new System.Drawing.Point(0, 100);
+            this.button_scorePrint.Name = "button_scorePrint";
+            this.button_scorePrint.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button_scorePrint.Size = new System.Drawing.Size(174, 50);
+            this.button_scorePrint.TabIndex = 3;
+            this.button_scorePrint.Text = "Print";
+            this.button_scorePrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_scorePrint.UseVisualStyleBackColor = true;
+            this.button_scorePrint.Click += new System.EventHandler(this.button_scorePrint_Click);
+            // 
+            // button_manageScore
+            // 
+            this.button_manageScore.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_manageScore.FlatAppearance.BorderSize = 0;
+            this.button_manageScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_manageScore.ForeColor = System.Drawing.Color.White;
+            this.button_manageScore.Location = new System.Drawing.Point(0, 50);
+            this.button_manageScore.Name = "button_manageScore";
+            this.button_manageScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button_manageScore.Size = new System.Drawing.Size(174, 50);
+            this.button_manageScore.TabIndex = 1;
+            this.button_manageScore.Text = "Manage Score";
+            this.button_manageScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_manageScore.UseVisualStyleBackColor = true;
+            this.button_manageScore.Click += new System.EventHandler(this.button_manageScore_Click);
+            // 
+            // button_newScore
+            // 
+            this.button_newScore.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_newScore.FlatAppearance.BorderSize = 0;
+            this.button_newScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_newScore.ForeColor = System.Drawing.Color.White;
+            this.button_newScore.Location = new System.Drawing.Point(0, 0);
+            this.button_newScore.Name = "button_newScore";
+            this.button_newScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button_newScore.Size = new System.Drawing.Size(174, 50);
+            this.button_newScore.TabIndex = 0;
+            this.button_newScore.Text = "New Score";
+            this.button_newScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_newScore.UseVisualStyleBackColor = true;
+            this.button_newScore.Click += new System.EventHandler(this.button_newScore_Click);
+            // 
+            // button_score
+            // 
+            this.button_score.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_score.FlatAppearance.BorderSize = 0;
+            this.button_score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_score.ForeColor = System.Drawing.Color.White;
+            this.button_score.Location = new System.Drawing.Point(0, 350);
+            this.button_score.Margin = new System.Windows.Forms.Padding(5);
+            this.button_score.Name = "button_score";
+            this.button_score.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_score.Size = new System.Drawing.Size(174, 55);
+            this.button_score.TabIndex = 5;
+            this.button_score.Text = "Score";
+            this.button_score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_score.UseVisualStyleBackColor = true;
+            this.button_score.Click += new System.EventHandler(this.button_score_Click);
             // 
             // panel_stdsubmenu
             // 
@@ -395,7 +472,7 @@ namespace PBL3
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = global::PBL3.Properties.Resources.admin;
+            this.pictureBox1.Image = global::PBL3.Properties.Resources.Teacher_icon;
             this.pictureBox1.Location = new System.Drawing.Point(798, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 66);
@@ -462,83 +539,6 @@ namespace PBL3
             this.label12.TabIndex = 0;
             this.label12.Text = "Team88 Programing School";
             // 
-            // button_newScore
-            // 
-            this.button_newScore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_newScore.FlatAppearance.BorderSize = 0;
-            this.button_newScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_newScore.ForeColor = System.Drawing.Color.White;
-            this.button_newScore.Location = new System.Drawing.Point(0, 0);
-            this.button_newScore.Name = "button_newScore";
-            this.button_newScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_newScore.Size = new System.Drawing.Size(174, 50);
-            this.button_newScore.TabIndex = 0;
-            this.button_newScore.Text = "New Score";
-            this.button_newScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_newScore.UseVisualStyleBackColor = true;
-            this.button_newScore.Click += new System.EventHandler(this.button_newScore_Click);
-            // 
-            // button_manageScore
-            // 
-            this.button_manageScore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_manageScore.FlatAppearance.BorderSize = 0;
-            this.button_manageScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_manageScore.ForeColor = System.Drawing.Color.White;
-            this.button_manageScore.Location = new System.Drawing.Point(0, 50);
-            this.button_manageScore.Name = "button_manageScore";
-            this.button_manageScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageScore.Size = new System.Drawing.Size(174, 50);
-            this.button_manageScore.TabIndex = 1;
-            this.button_manageScore.Text = "Manage Score";
-            this.button_manageScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_manageScore.UseVisualStyleBackColor = true;
-            this.button_manageScore.Click += new System.EventHandler(this.button_manageScore_Click);
-            // 
-            // button_scorePrint
-            // 
-            this.button_scorePrint.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_scorePrint.FlatAppearance.BorderSize = 0;
-            this.button_scorePrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_scorePrint.ForeColor = System.Drawing.Color.White;
-            this.button_scorePrint.Location = new System.Drawing.Point(0, 100);
-            this.button_scorePrint.Name = "button_scorePrint";
-            this.button_scorePrint.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_scorePrint.Size = new System.Drawing.Size(174, 50);
-            this.button_scorePrint.TabIndex = 3;
-            this.button_scorePrint.Text = "Print";
-            this.button_scorePrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_scorePrint.UseVisualStyleBackColor = true;
-            this.button_scorePrint.Click += new System.EventHandler(this.button_scorePrint_Click);
-            // 
-            // panel_scoreSubmenu
-            // 
-            this.panel_scoreSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel_scoreSubmenu.Controls.Add(this.button_scorePrint);
-            this.panel_scoreSubmenu.Controls.Add(this.button_manageScore);
-            this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
-            this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 405);
-            this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
-            this.panel_scoreSubmenu.Size = new System.Drawing.Size(174, 153);
-            this.panel_scoreSubmenu.TabIndex = 6;
-            // 
-            // button_score
-            // 
-            this.button_score.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_score.FlatAppearance.BorderSize = 0;
-            this.button_score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_score.ForeColor = System.Drawing.Color.White;
-            this.button_score.Location = new System.Drawing.Point(0, 350);
-            this.button_score.Margin = new System.Windows.Forms.Padding(5);
-            this.button_score.Name = "button_score";
-            this.button_score.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_score.Size = new System.Drawing.Size(174, 55);
-            this.button_score.TabIndex = 5;
-            this.button_score.Text = "Score";
-            this.button_score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_score.UseVisualStyleBackColor = true;
-            this.button_score.Click += new System.EventHandler(this.button_score_Click);
-            // 
             // Teacher_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -554,6 +554,7 @@ namespace PBL3
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.Teacher_Form_Load);
             this.panel_slide.ResumeLayout(false);
+            this.panel_scoreSubmenu.ResumeLayout(false);
             this.panel_stdsubmenu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);
             this.panel_logo.PerformLayout();
@@ -567,7 +568,6 @@ namespace PBL3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel_scoreSubmenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -30,14 +30,14 @@ namespace PBL3
         private void button_print_Click(object sender, EventArgs e)
         {
             //We need DGVprinter helper for print pdf file
-            printer.Title = "Mdemy Student score list";
-            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
+            printer.Title = "Team88 Student score list";
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now);
             printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             printer.PageNumbers = true;
             printer.PageNumberInHeader = false;
             printer.PorportionalColumns = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Mdemy";
+            printer.Footer = "Team88";
             printer.FooterSpacing = 15;
             printer.printDocument.DefaultPageSettings.Landscape = true;
             printer.PrintDataGridView(DataGridView_score);

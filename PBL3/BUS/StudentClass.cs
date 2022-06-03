@@ -83,6 +83,10 @@ namespace PBL3
             int x = Convert.ToInt32(exeCount("SELECT COUNT(*) FROM student WHERE StdId = "+Id));
             return x;
         }
+        public string welcome(string user,string pass)
+        {
+            return exeCount("SELECT StdFirstName FROM `student` WHERE username='" + user + "'AND password='" + pass + "'") + " " + exeCount("SELECT StdLastName FROM `student` WHERE username='" + user + "'AND password='" + pass + "'");
+        }
         //create a function search for student (first name, last name, address)
         public DataTable searchStudent(string searchdata)
         {

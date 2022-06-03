@@ -193,6 +193,16 @@ namespace PBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sdfsdfsdf {
+            get {
+                object obj = ResourceManager.GetObject("sdfsdfsdf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shutdown_50px {
             get {
                 object obj = ResourceManager.GetObject("shutdown_50px", resourceCulture);
@@ -206,6 +216,26 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap student {
             get {
                 object obj = ResourceManager.GetObject("student", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap student_registration_369785 {
+            get {
+                object obj = ResourceManager.GetObject("student-registration-369785", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Teacher_icon {
+            get {
+                object obj = ResourceManager.GetObject("Teacher-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

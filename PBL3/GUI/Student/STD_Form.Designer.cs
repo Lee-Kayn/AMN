@@ -33,6 +33,7 @@ namespace PBL3
             this.but_exit = new System.Windows.Forms.Button();
             this.but_dash = new System.Windows.Forms.Button();
             this.panel_stdsubmenu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.button_stdPrint = new System.Windows.Forms.Button();
             this.button_manageStd = new System.Windows.Forms.Button();
             this.button_registration = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@ namespace PBL3
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel_slide.SuspendLayout();
             this.panel_stdsubmenu.SuspendLayout();
             this.panel_logo.SuspendLayout();
@@ -126,6 +126,22 @@ namespace PBL3
             this.panel_stdsubmenu.Name = "panel_stdsubmenu";
             this.panel_stdsubmenu.Size = new System.Drawing.Size(200, 219);
             this.panel_stdsubmenu.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 150);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(200, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Print";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button_stdPrint
             // 
@@ -346,29 +362,13 @@ namespace PBL3
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = global::PBL3.Properties.Resources.admin;
+            this.pictureBox1.Image = global::PBL3.Properties.Resources.sdfsdfsdf;
             this.pictureBox1.Location = new System.Drawing.Point(798, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 150);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(200, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Print";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // STD_Form
             // 
@@ -383,6 +383,7 @@ namespace PBL3
             this.Name = "STD_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.STD_Load);
             this.panel_slide.ResumeLayout(false);
             this.panel_stdsubmenu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);

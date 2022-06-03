@@ -54,7 +54,6 @@ namespace PBL3
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(909, 10);
             this.panel3.TabIndex = 32;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button_print
             // 
@@ -134,7 +133,6 @@ namespace PBL3
             this.DataGridView_student.ThemeStyle.RowsStyle.Height = 80;
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGridView_student.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_student_CellContentClick);
             // 
             // label7
             // 
@@ -143,10 +141,9 @@ namespace PBL3
             this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(368, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(308, 38);
+            this.label7.Size = new System.Drawing.Size(309, 38);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Mdemy Course List";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label7.Text = "Team88 Course List";
             // 
             // panel2
             // 
@@ -157,7 +154,6 @@ namespace PBL3
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(934, 99);
             this.panel2.TabIndex = 32;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button_search
             // 
@@ -185,7 +181,6 @@ namespace PBL3
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(934, 51);
             this.panel1.TabIndex = 31;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // textBox_search
             // 
@@ -194,7 +189,6 @@ namespace PBL3
             this.textBox_search.Name = "textBox_search";
             this.textBox_search.Size = new System.Drawing.Size(170, 37);
             this.textBox_search.TabIndex = 36;
-            this.textBox_search.TextChanged += new System.EventHandler(this.textBox_search_TextChanged);
             // 
             // PrintCourseForm
             // 

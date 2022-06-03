@@ -13,6 +13,7 @@ namespace PBL3
     public partial class STD_Form : Form
     {
         public string user, pass;
+        StudentClass student = new StudentClass();
         public STD_Form(string user,string pass)
         {
             this.user=user;
@@ -89,6 +90,11 @@ namespace PBL3
         private void button_std_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_stdsubmenu);
+        }
+
+        private void STD_Load(object sender, EventArgs e)
+        {
+            label_user.Text = student.welcome(user, pass);
         }
 
         private void but_dash_Click(object sender, EventArgs e)
