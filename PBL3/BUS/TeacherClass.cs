@@ -85,6 +85,10 @@ namespace PBL3
         {
             return exeCount("SELECT Teacher_FN FROM `teacher` WHERE username='"+User+"'AND password='"+Pass+"'") +" "+ exeCount("SELECT Teacher_LN FROM `teacher` WHERE username='" + User + "'AND password='" + Pass + "'");
         }
+        public string getTeacherid(string user,string pass)
+        {
+            return exeCount("Select TeacherId from teacher where username='" + user + "' and password='" + pass + "'");
+        }
         //create a function search for student (first name, last name, address)
         public DataTable searchStudent(string searchdata)
         {

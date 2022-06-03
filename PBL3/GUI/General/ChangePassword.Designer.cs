@@ -48,9 +48,9 @@ namespace PBL3
             this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(368, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(308, 38);
+            this.label7.Size = new System.Drawing.Size(295, 38);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Mdemy Course List";
+            this.label7.Text = "Change Password";
             // 
             // panel1
             // 

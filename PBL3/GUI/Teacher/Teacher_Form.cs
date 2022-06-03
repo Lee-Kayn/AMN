@@ -153,6 +153,14 @@ namespace PBL3
 
         private void but_exit_Click(object sender, EventArgs e)
         {
+            if (activeForm != null)
+                activeForm.Close();
+            panel_main.Controls.Add(panel_cover);
+            studentCount();
+        }
+
+        private void butexit_Click(object sender, EventArgs e)
+        {
             LoginForm login = new LoginForm();
             this.Hide();
             login.Show();
@@ -160,10 +168,7 @@ namespace PBL3
 
         private void but_dash_Click(object sender, EventArgs e)
         {
-            if (activeForm != null)
-                activeForm.Close();
-            panel_main.Controls.Add(panel_cover);
-            studentCount();
+            ChangePassword changePassword = new ChangePassword(user,pass,1);
         }
     }
 }

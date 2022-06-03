@@ -16,7 +16,9 @@ namespace PBL3
         DBconnect connect = new DBconnect();
 
         string user, pass;
+        int Flag;
         StudentClass student=new StudentClass();
+        TeacherClass teacher=new TeacherClass();
         private void button_print_Click(object sender, EventArgs e)
         {
             string old_pass = textBox1.Text;
@@ -25,9 +27,18 @@ namespace PBL3
             if(old_pass == pass && new_pass !="")
                 if(confirm_pass == new_pass)
                 {
-                    MySqlCommand command=new MySqlCommand("UPDATE `student` SET `password` = '"+new_pass+"' WHERE `student`.`StdId` = "+student.STD_ID(user,pass), connect.getconnection);
-                    connect.openConnect();
-                    int i=command.ExecuteNonQuery();
+                    if(Flag == 0)
+                    {
+                        MySqlCommand command = new MySqlCommand("UPDATE `student` SET `password` = '" + new_pass + "' WHERE `student`.`StdId` = " + student.STD_ID(user, pass), connect.getconnection);
+                        connect.openConnect();
+                        int i = command.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                        MySqlCommand command = new MySqlCommand("UPDATE `teacher` SET `password` = '" + new_pass + "' WHERE `teacher`.`TeacherId` = " + teacher.getTeacherid(user, pass), connect.getconnection);
+                        connect.openConnect();
+                        int i = command.ExecuteNonQuery();
+                    }
                     MessageBox.Show("Change Password Successfully", "Change Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     pass = new_pass;
                     textBox1.Text = "";
@@ -49,10 +60,11 @@ namespace PBL3
             }
         }
 
-        public ChangePassword(string user,string pass)
+        public ChangePassword(string user,string pass,int Flag)
         {
             this.user = user;
-            this.pass = pass;    
+            this.pass = pass;
+            this.Flag = Flag;
             InitializeComponent();
         }
     }

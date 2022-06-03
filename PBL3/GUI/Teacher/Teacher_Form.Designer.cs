@@ -65,6 +65,7 @@ namespace PBL3
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.butexit = new System.Windows.Forms.Button();
             this.panel_slide.SuspendLayout();
             this.panel_scoreSubmenu.SuspendLayout();
             this.panel_stdsubmenu.SuspendLayout();
@@ -82,6 +83,7 @@ namespace PBL3
             // 
             this.panel_slide.AutoScroll = true;
             this.panel_slide.BackColor = System.Drawing.Color.Peru;
+            this.panel_slide.Controls.Add(this.butexit);
             this.panel_slide.Controls.Add(this.but_exit);
             this.panel_slide.Controls.Add(this.but_dash);
             this.panel_slide.Controls.Add(this.panel_scoreSubmenu);
@@ -108,7 +110,7 @@ namespace PBL3
             this.but_exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.but_exit.Size = new System.Drawing.Size(174, 55);
             this.but_exit.TabIndex = 10;
-            this.but_exit.Text = "Exit";
+            this.but_exit.Text = "Dashboard";
             this.but_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_exit.UseVisualStyleBackColor = true;
             this.but_exit.Click += new System.EventHandler(this.but_exit_Click);
@@ -125,7 +127,7 @@ namespace PBL3
             this.but_dash.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.but_dash.Size = new System.Drawing.Size(174, 55);
             this.but_dash.TabIndex = 9;
-            this.but_dash.Text = "Dashboard";
+            this.but_dash.Text = "Change Password";
             this.but_dash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_dash.UseVisualStyleBackColor = true;
             this.but_dash.Click += new System.EventHandler(this.but_dash_Click);
@@ -539,6 +541,23 @@ namespace PBL3
             this.label12.TabIndex = 0;
             this.label12.Text = "Team88 Programing School";
             // 
+            // butexit
+            // 
+            this.butexit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.butexit.FlatAppearance.BorderSize = 0;
+            this.butexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butexit.ForeColor = System.Drawing.Color.White;
+            this.butexit.Location = new System.Drawing.Point(0, 668);
+            this.butexit.Margin = new System.Windows.Forms.Padding(5);
+            this.butexit.Name = "butexit";
+            this.butexit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.butexit.Size = new System.Drawing.Size(174, 55);
+            this.butexit.TabIndex = 11;
+            this.butexit.Text = "Exit";
+            this.butexit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.butexit.UseVisualStyleBackColor = true;
+            this.butexit.Click += new System.EventHandler(this.butexit_Click);
+            // 
             // Teacher_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -610,5 +629,6 @@ namespace PBL3
         private System.Windows.Forms.Button button_manageScore;
         private System.Windows.Forms.Button button_newScore;
         private System.Windows.Forms.Button button_score;
+        private System.Windows.Forms.Button butexit;
     }
 }
