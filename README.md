@@ -1,5 +1,5 @@
-_**PBL3**_ (h1)  
-_Team88- Programing School_ (h2)  
+_**PBL3**_   
+_Team88- Programing School_   
 Before running the program, you need to create database on xampp,db include:  
 -score  
 -user (it's for account admin)  
