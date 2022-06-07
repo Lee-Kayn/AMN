@@ -37,13 +37,13 @@ namespace PBL3
         {
             //We need DGVprinter helper for print pdf file
             printer.Title = "Team88 Course list";
-            printer.SubTitle = string.Format("Date: {0}", DateTime.Now);
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
             printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             printer.PageNumbers = true;
             printer.PageNumberInHeader = false;
             printer.PorportionalColumns = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Team88 Programing School";
+            printer.Footer = "Design & Developed by Team88";
             printer.FooterSpacing = 15;
             printer.printDocument.DefaultPageSettings.Landscape = true;
             printer.PrintDataGridView(DataGridView_student);

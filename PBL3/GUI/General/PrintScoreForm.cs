@@ -37,7 +37,7 @@ namespace PBL3
             printer.PageNumberInHeader = false;
             printer.PorportionalColumns = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Team88";
+            printer.Footer = "Design & Developed by Team88";
             printer.FooterSpacing = 15;
             printer.printDocument.DefaultPageSettings.Landscape = true;
             printer.PrintDataGridView(DataGridView_score);
