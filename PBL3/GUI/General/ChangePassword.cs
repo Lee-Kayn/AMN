@@ -60,6 +60,14 @@ namespace PBL3
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            this.Close();
+        }
+
         public ChangePassword(string user,string pass,int Flag)
         {
             this.user = user;

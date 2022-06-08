@@ -40,6 +40,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button_clear = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox_id = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button_search = new System.Windows.Forms.Button();
             this.DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_student)).BeginInit();
@@ -97,9 +97,9 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(370, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(287, 38);
+            this.label7.Size = new System.Drawing.Size(294, 38);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Manage Students";
+            this.label7.Text = "Manage Teachers";
             // 
             // txtpassword
             // 
@@ -189,6 +189,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(934, 243);
             this.panel2.TabIndex = 36;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(113, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(299, 28);
+            this.comboBox1.TabIndex = 39;
             // 
             // label11
             // 
@@ -506,14 +514,6 @@
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DataGridView_student.Click += new System.EventHandler(this.DataGridView_teacher_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(113, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(299, 28);
-            this.comboBox1.TabIndex = 39;
             // 
             // ManageTeacher
             // 

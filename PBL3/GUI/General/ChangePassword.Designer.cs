@@ -38,6 +38,7 @@ namespace PBL3
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button_print = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,7 +126,7 @@ namespace PBL3
             this.button_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_print.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_print.ForeColor = System.Drawing.Color.White;
-            this.button_print.Location = new System.Drawing.Point(375, 447);
+            this.button_print.Location = new System.Drawing.Point(353, 440);
             this.button_print.Name = "button_print";
             this.button_print.Size = new System.Drawing.Size(118, 39);
             this.button_print.TabIndex = 46;
@@ -133,11 +134,27 @@ namespace PBL3
             this.button_print.UseVisualStyleBackColor = false;
             this.button_print.Click += new System.EventHandler(this.button_print_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Peru;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(513, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 39);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 613);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_print);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -167,5 +184,6 @@ namespace PBL3
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button_print;
+        private System.Windows.Forms.Button button1;
     }
 }

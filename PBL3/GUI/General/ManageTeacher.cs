@@ -33,14 +33,14 @@ namespace PBL3
             textBox_id.Text = DataGridView_student.CurrentRow.Cells[0].Value.ToString();
             textBox_Fname.Text = DataGridView_student.CurrentRow.Cells[1].Value.ToString();
             textBox_Lname.Text = DataGridView_student.CurrentRow.Cells[2].Value.ToString();
-            txtusername.Text = DataGridView_student.CurrentRow.Cells[6].Value.ToString();
-            txtpassword.Text = DataGridView_student.CurrentRow.Cells[7].Value.ToString();
+            txtusername.Text = DataGridView_student.CurrentRow.Cells[5].Value.ToString();
+            txtpassword.Text = DataGridView_student.CurrentRow.Cells[6].Value.ToString();
 
             dateTimePicker1.Value = (DateTime)DataGridView_student.CurrentRow.Cells[3].Value;
             if (DataGridView_student.CurrentRow.Cells[4].Value.ToString() == "Male")
                 radioButton_male.Checked = true;
 
-            textBox_phone.Text = DataGridView_student.CurrentRow.Cells[5].Value.ToString();
+            textBox_phone.Text = DataGridView_student.CurrentRow.Cells[7].Value.ToString();
             textBox_address.Text = DataGridView_student.CurrentRow.Cells[8].Value.ToString();
             comboBox1.ResetText();
             byte[] img = (byte[])DataGridView_student.CurrentRow.Cells[10].Value;
@@ -118,7 +118,7 @@ namespace PBL3
                     if (teacher.updateTeacher(id, fname, lname, bdate, gender, username, password, phone, address,subject, img))
                     {
                         showTable();
-                        MessageBox.Show("Student data update", "Update Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Teacher data update", "Update Teacher", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         button_clear.PerformClick();
                     }
                 }
@@ -130,7 +130,7 @@ namespace PBL3
             }
             else
             {
-                MessageBox.Show("Empty Field", "Update Student", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Empty Field", "Update Teacher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

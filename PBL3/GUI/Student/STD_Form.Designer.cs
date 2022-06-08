@@ -44,24 +44,24 @@ namespace PBL3
             this.label2 = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_role = new System.Windows.Forms.Label();
             this.label_user = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_slide.SuspendLayout();
             this.panel_stdsubmenu.SuspendLayout();
             this.panel_logo.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.panel_cover.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_slide
@@ -275,6 +275,17 @@ namespace PBL3
             this.panel_cover.Size = new System.Drawing.Size(934, 613);
             this.panel_cover.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::PBL3.Properties.Resources.Class;
+            this.pictureBox2.Location = new System.Drawing.Point(-3, 141);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(934, 460);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Peru;
@@ -289,15 +300,26 @@ namespace PBL3
             this.panel2.Size = new System.Drawing.Size(934, 72);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = global::PBL3.Properties.Resources.sdfsdfsdf;
+            this.pictureBox1.Location = new System.Drawing.Point(798, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // label_role
             // 
             this.label_role.AutoSize = true;
             this.label_role.ForeColor = System.Drawing.Color.White;
             this.label_role.Location = new System.Drawing.Point(140, 40);
             this.label_role.Name = "label_role";
-            this.label_role.Size = new System.Drawing.Size(110, 30);
+            this.label_role.Size = new System.Drawing.Size(103, 30);
             this.label_role.TabIndex = 3;
-            this.label_role.Text = "Teacher";
+            this.label_role.Text = "Student";
             // 
             // label_user
             // 
@@ -348,28 +370,6 @@ namespace PBL3
             this.label12.TabIndex = 0;
             this.label12.Text = "Team88 Programing School";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::PBL3.Properties.Resources.Class;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 141);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(934, 460);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = global::PBL3.Properties.Resources.sdfsdfsdf;
-            this.pictureBox1.Location = new System.Drawing.Point(798, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // STD_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -390,12 +390,12 @@ namespace PBL3
             this.panel_logo.PerformLayout();
             this.panel_main.ResumeLayout(false);
             this.panel_cover.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

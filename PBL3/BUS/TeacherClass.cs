@@ -101,7 +101,7 @@ namespace PBL3
         //create a function edit for student
         public bool updateTeacher(int id, string fname, string lname, DateTime bdate, string gender, string phone, string username, string password, string address, string subject, byte[] img)
         {
-            MySqlCommand command = new MySqlCommand("UPDATE `teacher` SET `Teacher_FN`=@fn,`Teacher_LN`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`username`=@us,`password`=@pass,`Address`=@adr,`Subject`=@sub,`Photo`=@img WHERE  `StdId`= @id", connect.getconnection);
+            MySqlCommand command = new MySqlCommand("UPDATE `teacher` SET `Teacher_FN`=@fn,`Teacher_LN`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`username`=@us,`password`=@pass,`Address`=@adr,`Subject`=@sub,`Photo`=@img WHERE  `TeacherId`= @id", connect.getconnection);
 
             //@id,@fn, @ln, @bd, @gd, @ph, @adr, @img
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;

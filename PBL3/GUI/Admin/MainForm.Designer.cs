@@ -45,6 +45,7 @@ namespace PBL3
             this.panel_courseSubmenu = new System.Windows.Forms.Panel();
             this.button_coursePrint = new System.Windows.Forms.Button();
             this.button_manageCourse = new System.Windows.Forms.Button();
+            this.button_newCourse = new System.Windows.Forms.Button();
             this.button_course = new System.Windows.Forms.Button();
             this.panel_stdsubmenu = new System.Windows.Forms.Panel();
             this.button_stdPrint = new System.Windows.Forms.Button();
@@ -74,7 +75,6 @@ namespace PBL3
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.button_newCourse = new System.Windows.Forms.Button();
             this.panel_slide.SuspendLayout();
             this.panel_teacher.SuspendLayout();
             this.panel_scoreSubmenu.SuspendLayout();
@@ -185,7 +185,7 @@ namespace PBL3
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(174, 50);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Manage Student";
+            this.button2.Text = "Manage Teacher";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -343,6 +343,22 @@ namespace PBL3
             this.button_manageCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_manageCourse.UseVisualStyleBackColor = true;
             this.button_manageCourse.Click += new System.EventHandler(this.button_manageCourse_Click);
+            // 
+            // button_newCourse
+            // 
+            this.button_newCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_newCourse.FlatAppearance.BorderSize = 0;
+            this.button_newCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_newCourse.ForeColor = System.Drawing.Color.White;
+            this.button_newCourse.Location = new System.Drawing.Point(0, 0);
+            this.button_newCourse.Name = "button_newCourse";
+            this.button_newCourse.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button_newCourse.Size = new System.Drawing.Size(174, 50);
+            this.button_newCourse.TabIndex = 0;
+            this.button_newCourse.Text = "New Course";
+            this.button_newCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_newCourse.UseVisualStyleBackColor = true;
+            this.button_newCourse.Click += new System.EventHandler(this.button_newCourse_Click);
             // 
             // button_course
             // 
@@ -693,22 +709,6 @@ namespace PBL3
             this.label12.Size = new System.Drawing.Size(328, 28);
             this.label12.TabIndex = 0;
             this.label12.Text = "Team88 Programing School";
-            // 
-            // button_newCourse
-            // 
-            this.button_newCourse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_newCourse.FlatAppearance.BorderSize = 0;
-            this.button_newCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_newCourse.ForeColor = System.Drawing.Color.White;
-            this.button_newCourse.Location = new System.Drawing.Point(0, 0);
-            this.button_newCourse.Name = "button_newCourse";
-            this.button_newCourse.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_newCourse.Size = new System.Drawing.Size(174, 50);
-            this.button_newCourse.TabIndex = 0;
-            this.button_newCourse.Text = "New Course";
-            this.button_newCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_newCourse.UseVisualStyleBackColor = true;
-            this.button_newCourse.Click += new System.EventHandler(this.button_newCourse_Click);
             // 
             // MainForm
             // 
