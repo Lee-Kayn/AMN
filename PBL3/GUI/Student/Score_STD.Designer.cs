@@ -257,6 +257,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.DataGridView_score);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Score_STD";
             this.Text = "Score_STD";
             this.Load += new System.EventHandler(this.ManageScoreForm_Load);

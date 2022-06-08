@@ -526,6 +526,7 @@
             this.Controls.Add(this.button_search);
             this.Controls.Add(this.DataGridView_student);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ManageTeacher";
             this.Text = "ManageTeacher";
             this.Load += new System.EventHandler(this.manageTeacher_load);

@@ -77,7 +77,7 @@ namespace PBL3
             this.panel_slide.Location = new System.Drawing.Point(0, 0);
             this.panel_slide.Margin = new System.Windows.Forms.Padding(5);
             this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(200, 613);
+            this.panel_slide.Size = new System.Drawing.Size(200, 650);
             this.panel_slide.TabIndex = 0;
             // 
             // but_exit
@@ -261,7 +261,7 @@ namespace PBL3
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(200, 0);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(934, 613);
+            this.panel_main.Size = new System.Drawing.Size(950, 650);
             this.panel_main.TabIndex = 1;
             // 
             // panel_cover
@@ -272,14 +272,14 @@ namespace PBL3
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_cover.Location = new System.Drawing.Point(0, 0);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(934, 613);
+            this.panel_cover.Size = new System.Drawing.Size(950, 650);
             this.panel_cover.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::PBL3.Properties.Resources.Class;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 141);
+            this.pictureBox2.Location = new System.Drawing.Point(5, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(934, 460);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -297,14 +297,14 @@ namespace PBL3
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(934, 72);
+            this.panel2.Size = new System.Drawing.Size(950, 72);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.Image = global::PBL3.Properties.Resources.sdfsdfsdf;
-            this.pictureBox1.Location = new System.Drawing.Point(798, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(814, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -356,7 +356,7 @@ namespace PBL3
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(934, 69);
+            this.panel1.Size = new System.Drawing.Size(950, 69);
             this.panel1.TabIndex = 0;
             // 
             // label12
@@ -378,6 +378,7 @@ namespace PBL3
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_slide);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MinimumSize = new System.Drawing.Size(1150, 650);
             this.Name = "STD_Form";

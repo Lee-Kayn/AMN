@@ -52,6 +52,10 @@ namespace PBL3
             this.DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.button_clear = new System.Windows.Forms.Button();
             this.textBox_id = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,10 +63,6 @@ namespace PBL3
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_search = new System.Windows.Forms.Button();
             this.textBox_search = new System.Windows.Forms.TextBox();
-            this.txtpassword = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_student)).BeginInit();
@@ -374,6 +374,46 @@ namespace PBL3
             this.panel2.Size = new System.Drawing.Size(934, 235);
             this.panel2.TabIndex = 17;
             // 
+            // txtpassword
+            // 
+            this.txtpassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtpassword.Location = new System.Drawing.Point(375, 103);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(135, 37);
+            this.txtpassword.TabIndex = 37;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Cyan;
+            this.label9.Location = new System.Drawing.Point(271, 107);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(135, 28);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Password :";
+            // 
+            // txtusername
+            // 
+            this.txtusername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtusername.Location = new System.Drawing.Point(125, 103);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(140, 37);
+            this.txtusername.TabIndex = 35;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Cyan;
+            this.label10.Location = new System.Drawing.Point(21, 107);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(147, 28);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "UserName :";
+            // 
             // button_clear
             // 
             this.button_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -455,46 +495,6 @@ namespace PBL3
             this.textBox_search.Size = new System.Drawing.Size(156, 37);
             this.textBox_search.TabIndex = 31;
             // 
-            // txtpassword
-            // 
-            this.txtpassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtpassword.Location = new System.Drawing.Point(375, 103);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(135, 37);
-            this.txtpassword.TabIndex = 37;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Cyan;
-            this.label9.Location = new System.Drawing.Point(271, 107);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 28);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Password :";
-            // 
-            // txtusername
-            // 
-            this.txtusername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtusername.Location = new System.Drawing.Point(125, 103);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(140, 37);
-            this.txtusername.TabIndex = 35;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Cyan;
-            this.label10.Location = new System.Drawing.Point(21, 107);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(147, 28);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "UserName :";
-            // 
             // ManageStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -506,6 +506,7 @@ namespace PBL3
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ManageStudentForm";
             this.Text = "ManageStudentForm";

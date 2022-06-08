@@ -161,6 +161,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.DataGridView_score);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Print_STD";
             this.Text = "Print_STD";
             this.Load += new System.EventHandler(this.PrintScoreForm_Load);

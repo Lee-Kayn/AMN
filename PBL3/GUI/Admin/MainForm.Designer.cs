@@ -109,7 +109,7 @@ namespace PBL3
             this.panel_slide.Location = new System.Drawing.Point(0, 0);
             this.panel_slide.Margin = new System.Windows.Forms.Padding(5);
             this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(200, 613);
+            this.panel_slide.Size = new System.Drawing.Size(200, 650);
             this.panel_slide.TabIndex = 0;
             // 
             // but_exit
@@ -507,7 +507,7 @@ namespace PBL3
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(200, 0);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(934, 613);
+            this.panel_main.Size = new System.Drawing.Size(950, 650);
             this.panel_main.TabIndex = 1;
             // 
             // panel_cover
@@ -519,14 +519,14 @@ namespace PBL3
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_cover.Location = new System.Drawing.Point(0, 0);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(934, 613);
+            this.panel_cover.Size = new System.Drawing.Size(950, 650);
             this.panel_cover.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::PBL3.Properties.Resources.Class;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 141);
+            this.pictureBox2.Location = new System.Drawing.Point(5, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(934, 372);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -544,9 +544,9 @@ namespace PBL3
             this.panel3.Controls.Add(this.label_maleStd);
             this.panel3.Controls.Add(this.label_totalStd);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 519);
+            this.panel3.Location = new System.Drawing.Point(0, 556);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(934, 94);
+            this.panel3.Size = new System.Drawing.Size(950, 94);
             this.panel3.TabIndex = 2;
             // 
             // label11
@@ -554,7 +554,7 @@ namespace PBL3
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(543, 16);
+            this.label11.Location = new System.Drawing.Point(559, 16);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(170, 30);
             this.label11.TabIndex = 6;
@@ -565,7 +565,7 @@ namespace PBL3
             this.label_cfemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_cfemale.AutoSize = true;
             this.label_cfemale.ForeColor = System.Drawing.Color.White;
-            this.label_cfemale.Location = new System.Drawing.Point(771, 53);
+            this.label_cfemale.Location = new System.Drawing.Point(787, 53);
             this.label_cfemale.Name = "label_cfemale";
             this.label_cfemale.Size = new System.Drawing.Size(117, 30);
             this.label_cfemale.TabIndex = 4;
@@ -576,7 +576,7 @@ namespace PBL3
             this.label_cmale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_cmale.AutoSize = true;
             this.label_cmale.ForeColor = System.Drawing.Color.White;
-            this.label_cmale.Location = new System.Drawing.Point(665, 53);
+            this.label_cmale.Location = new System.Drawing.Point(681, 53);
             this.label_cmale.Name = "label_cmale";
             this.label_cmale.Size = new System.Drawing.Size(88, 30);
             this.label_cmale.TabIndex = 5;
@@ -586,7 +586,7 @@ namespace PBL3
             // 
             this.comboBox_course.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox_course.FormattingEnabled = true;
-            this.comboBox_course.Location = new System.Drawing.Point(660, 12);
+            this.comboBox_course.Location = new System.Drawing.Point(676, 12);
             this.comboBox_course.Name = "comboBox_course";
             this.comboBox_course.Size = new System.Drawing.Size(211, 38);
             this.comboBox_course.TabIndex = 3;
@@ -636,14 +636,14 @@ namespace PBL3
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(934, 72);
+            this.panel2.Size = new System.Drawing.Size(950, 72);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.Image = global::PBL3.Properties.Resources.admin;
-            this.pictureBox1.Location = new System.Drawing.Point(798, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(814, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -696,7 +696,7 @@ namespace PBL3
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(934, 69);
+            this.panel1.Size = new System.Drawing.Size(950, 69);
             this.panel1.TabIndex = 0;
             // 
             // label12
@@ -718,6 +718,7 @@ namespace PBL3
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_slide);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MinimumSize = new System.Drawing.Size(1150, 650);
             this.Name = "MainForm";

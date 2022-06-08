@@ -276,6 +276,7 @@
             this.Controls.Add(this.button_search);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Printer_Teacher";
             this.Text = "Printer_Teacher";
             this.Load += new System.EventHandler(this.PrintTeacher_Load);

@@ -333,6 +333,7 @@ namespace PBL3
             this.Controls.Add(this.button_search);
             this.Controls.Add(this.DataGridView_score);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ManageScoreForm";
             this.Text = "ManageScoreForm";
