@@ -168,9 +168,8 @@ namespace PBL3
 
         private void but_dash_Click(object sender, EventArgs e)
         {
-            ChangePassword changePassword = new ChangePassword(user,pass,1);
-            this.Hide();
-            changePassword.Show();
+            openChildForm(new ChangePassword(user, pass, 1));
+            hideSubmenu();
         }
     }
 }
