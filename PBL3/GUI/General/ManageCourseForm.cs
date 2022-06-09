@@ -81,14 +81,20 @@ namespace PBL3
             {
                 try
                 {
-                    int id = Convert.ToInt32(textBox_id.Text);
-                    if (course.deletCourse(id))
+                    foreach (DataGridViewRow row in DataGridView_course.SelectedRows)
                     {
-                        showData();
-                        button_clear.PerformClick();
-                        MessageBox.Show("course Deleted", "Removed Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        int rowId = Convert.ToInt32(row.Cells[0].Value);
+                        if (rowId > 0)
+                        {
+                            if (course.deletCourse(rowId))
+                            {
+                                continue;
+                            }
+                        }
                     }
+                    showData();
+                    MessageBox.Show("Student Removed", "Remove Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    button_clear.PerformClick();
                 }
                 catch (Exception ex)
 

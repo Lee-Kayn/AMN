@@ -87,16 +87,20 @@ namespace PBL3
             }
             else
             {
-                int id = Convert.ToInt32(textBox_stdId.Text);
-                if (MessageBox.Show("Are you sure you want to remove this score", "Delete Score", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                foreach (DataGridViewRow row in DataGridView_score.SelectedRows)
                 {
-                    if (score.deleteScore(id))
+                    int rowId = Convert.ToInt32(row.Cells[0].Value);
+                    if (rowId > 0)
                     {
-                        showScore();
-                        MessageBox.Show("Score Removed", "Delete Score", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        button_clear.PerformClick();
+                        if (score.deleteScore(rowId))
+                        {
+                            continue;
+                        }
                     }
                 }
+                showScore();
+                MessageBox.Show("Score Removed", "Remove Score", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                button_clear.PerformClick();
 
             }
         }

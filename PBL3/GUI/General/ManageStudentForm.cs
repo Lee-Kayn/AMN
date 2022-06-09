@@ -141,15 +141,26 @@ namespace PBL3
 
         private void button_delete_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(textBox_id.Text);
-            if (MessageBox.Show("Are you sure you want to remove this student", "Remove Student", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (textBox_id.Text == "")
             {
-                if (student.deleteStudent(id))
+                MessageBox.Show("Field Error- we need student id", "Delete Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                foreach (DataGridViewRow row in DataGridView_student.SelectedRows)
                 {
-                    showTable();
-                    MessageBox.Show("Student Removed", "Remove student", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    button_clear.PerformClick();
+                    int rowId = Convert.ToInt32(row.Cells[0].Value);
+                    if (rowId > 0)
+                    {
+                        if (student.deleteStudent(rowId))
+                        {
+                            continue;
+                        }
+                    }
                 }
+                showTable();
+                MessageBox.Show("Student Removed", "Remove Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                button_clear.PerformClick();
             }
         }
     }

@@ -290,7 +290,7 @@ namespace PBL3
             this.DataGridView_score.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView_score.EnableHeadersVisualStyles = false;
             this.DataGridView_score.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView_score.Location = new System.Drawing.Point(13, 100);
+            this.DataGridView_score.Location = new System.Drawing.Point(0, 100);
             this.DataGridView_score.Name = "DataGridView_score";
             this.DataGridView_score.RowHeadersVisible = false;
             this.DataGridView_score.RowHeadersWidth = 62;
