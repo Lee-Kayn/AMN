@@ -133,5 +133,19 @@ namespace PBL3
                 MessageBox.Show("Empty Field", "Update Teacher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void button_delete_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(textBox_id.Text);
+            if (MessageBox.Show("Are you sure you want to remove this teacher", "Remove Teacher", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (teacher.deleteTeacher(id))
+                {
+                    showTable();
+                    MessageBox.Show("Teacher Removed", "Remove Teacher", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    button_clear.PerformClick();
+                }
+            }
+        }
     }
 }
