@@ -73,12 +73,13 @@ namespace PBL3
             }
         }
         //Create a function to delete a score data
-        public bool deleteScore(int id)
+        public bool deleteScore(int id,string course)
         {
-            MySqlCommand command = new MySqlCommand("DELETE FROM `score` WHERE `StudentId`=@id", connect.getconnection);
+            MySqlCommand command = new MySqlCommand("DELETE FROM `score` WHERE `StudentId`=@id AND CourseName=@courseName ", connect.getconnection);
 
             //@id
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            command.Parameters.Add("@courseName", MySqlDbType.String).Value = course;
 
             connect.openConnect();
             if (command.ExecuteNonQuery() == 1)

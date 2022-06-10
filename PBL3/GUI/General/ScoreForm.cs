@@ -91,6 +91,7 @@ namespace PBL3
                     MessageBox.Show("StudentId does not exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            showScoe();
         }
 
         private void button_clear_Click(object sender, EventArgs e)

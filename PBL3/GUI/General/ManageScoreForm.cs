@@ -80,7 +80,6 @@ namespace PBL3
 
         private void button_delete_Click(object sender, EventArgs e)
         {
-           
             if (textBox_stdId.Text == "")
             {
                 MessageBox.Show("Field Error- we need student id", "Delete Score", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -90,9 +89,10 @@ namespace PBL3
                 foreach (DataGridViewRow row in DataGridView_score.SelectedRows)
                 {
                     int rowId = Convert.ToInt32(row.Cells[0].Value);
+                    string rowCourse = row.Cells[3].Value.ToString();
                     if (rowId > 0)
                     {
-                        if (score.deleteScore(rowId))
+                        if (score.deleteScore(rowId,rowCourse))
                         {
                             continue;
                         }
@@ -115,10 +115,16 @@ namespace PBL3
 
         private void DataGridView_course_Click(object sender, EventArgs e)
         {
-            textBox_stdId.Text = DataGridView_score.CurrentRow.Cells[0].Value.ToString();
-            comboBox_course.Text = DataGridView_score.CurrentRow.Cells[3].Value.ToString();
-            textBox_score.Text = DataGridView_score.CurrentRow.Cells[4].Value.ToString();
-            textBox_description.Text = DataGridView_score.CurrentRow.Cells[5].Value.ToString();
+            try
+            {
+                textBox_stdId.Text = DataGridView_score.CurrentRow.Cells[0].Value.ToString();
+                comboBox_course.Text = DataGridView_score.CurrentRow.Cells[3].Value.ToString();
+                textBox_score.Text = DataGridView_score.CurrentRow.Cells[4].Value.ToString();
+                textBox_description.Text = DataGridView_score.CurrentRow.Cells[5].Value.ToString();
+            } catch
+            {
+                MessageBox.Show("None Data", "Score Click", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void button_search_Click(object sender, EventArgs e)
