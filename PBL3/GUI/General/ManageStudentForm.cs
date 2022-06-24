@@ -15,9 +15,12 @@ namespace PBL3
     public partial class ManageStudentForm : Form
     {
         StudentClass student = new StudentClass();
-        public ManageStudentForm()
+        int flag = 0;
+        string pre_user,pre_password;
+        public ManageStudentForm(int Flag=0)
         {
             InitializeComponent();
+            flag=Flag;
         }
 
         private void ManageStudentForm_Load(object sender, EventArgs e)
@@ -30,6 +33,11 @@ namespace PBL3
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
             imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[9];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            if (flag == 1)
+            {
+                this.DataGridView_student.Columns[6].Visible = false;
+                this.DataGridView_student.Columns[7].Visible = false;
+            }
         }
 
         private void DataGridView_student_Click(object sender, EventArgs e)
@@ -39,6 +47,8 @@ namespace PBL3
             textBox_Lname.Text = DataGridView_student.CurrentRow.Cells[2].Value.ToString();
             txtusername.Text = DataGridView_student.CurrentRow.Cells[6].Value.ToString();
             txtpassword.Text = DataGridView_student.CurrentRow.Cells[7].Value.ToString();
+            pre_user= DataGridView_student.CurrentRow.Cells[6].Value.ToString();
+            pre_password= DataGridView_student.CurrentRow.Cells[7].Value.ToString();
 
             dateTimePicker1.Value = (DateTime)DataGridView_student.CurrentRow.Cells[3].Value;
             if (DataGridView_student.CurrentRow.Cells[4].Value.ToString() == "Male")
@@ -49,6 +59,11 @@ namespace PBL3
             byte[] img = (byte[])DataGridView_student.CurrentRow.Cells[9].Value;
             MemoryStream ms = new MemoryStream(img);
             pictureBox_student.Image = Image.FromStream(ms);
+            if (flag == 1)
+            {
+                txtpassword.Text = "Can't see";
+                txtusername.Text = "Can't see";
+            }
         }
 
         private void button_clear_Click(object sender, EventArgs e)
@@ -102,8 +117,13 @@ namespace PBL3
             string phone = textBox_phone.Text;
             string address = textBox_address.Text;
             string gender = radioButton_male.Checked ? "Male" : "Female";
-            string username = txtusername.Text;
-            string password = txtpassword.Text;
+            string username = pre_user;
+            string password = pre_password;
+            if (flag==0)
+            {
+                username = txtusername.Text;
+                password = txtpassword.Text;
+            }
 
             int born_year = dateTimePicker1.Value.Year;
             int this_year = DateTime.Now.Year;

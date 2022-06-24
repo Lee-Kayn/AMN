@@ -75,7 +75,7 @@ namespace PBL3
             hideSubmenu();
         }
 
-        private void button_stdPrint_Click(object sender, EventArgs e)
+        private void button_changepassword_Click(object sender, EventArgs e)
         {
             openChildForm(new ChangePassword( user, pass,0));
             hideSubmenu();

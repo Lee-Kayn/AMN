@@ -87,7 +87,7 @@ namespace PBL3
         private void button_manageStd_Click(object sender, EventArgs e)
         {
             teacher.Flag = 1;
-            openChildForm(new ManageStudentForm());
+            openChildForm(new ManageStudentForm(1));
             hideSubmenu();
         }
 

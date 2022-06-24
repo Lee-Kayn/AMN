@@ -97,7 +97,7 @@ namespace PBL3
             return table;
         }
         //create a function edit for student
-        public bool updateStudent(int id, string fname, string lname, DateTime bdate, string gender, string phone, string username, string password, string address, byte[] img)
+        public bool updateStudent(int id, string fname, string lname, DateTime bdate, string gender, string username, string password, string phone, string address, byte[] img)
         {
             MySqlCommand command = new MySqlCommand("UPDATE `student` SET `StdFirstName`=@fn,`StdLastName`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`username`=@us,`password`=@pass,`Address`=@adr,`Photo`=@img WHERE  `StdId`= @id", connect.getconnection);
 

@@ -272,34 +272,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\favicon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pinterest_profile_image.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\student.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cover3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cover31.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\classroom_50whitepx.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\classroomblue_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\shutdown_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cover.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\classroom_50coverpx.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Black and White Simple Online School Logo %281%29.png" />
